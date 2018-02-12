@@ -31,7 +31,7 @@
   // handle xhr sucess
   function updateUISuccess(responseText) {
     var response = JSON.parse(responseText);
-    var condition = response.weather[0];
+    var condition = response.weather[0].description;
     var temp = response.main.temp;
     weatherBox.innerHTML = `<p>It is currently ${temp} &#176 degrees.</p><p>${condition}</p>` ;
   }
