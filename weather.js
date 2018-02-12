@@ -20,7 +20,7 @@
    function responseMethod(){
     if(httpRequest.readyState === 4){
       if(httpRequest.status === 200){
-        updateUISuccess(htppRequest.responseText);
+        updateUISuccess(httpRequest.responseText);
       }else{
         updateUIError();
       }
